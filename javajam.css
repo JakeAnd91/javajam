@@ -4,6 +4,30 @@ body {
   font-family: Tahoma, Arial, sans-serif;
 }
 
+body {
+    background-image: url('images/fadedroad50.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;   /* makes it fill the screen */
+  background-position: center;  /* centers the image */
+  background-attachment: fixed; /* keeps it still while scrolling */
+}
+
+body.menu {
+  background: url('images/winding-road.jpg') no-repeat center top;
+  background-size: cover;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+body.home, body.menu, body.music {
+  font-family: Tahoma, Arial, sans-serif;
+  color: #221811;
+  line-height: 1.6;
+}
 
 header {
   color: #8C3826;
@@ -43,3 +67,25 @@ footer {
   margin-right: auto;
   padding: 10px;
 }
+
+#container {
+  display: flex;
+  justify-content: space-between; /* or center, or flex-start */
+  align-items: center; /* aligns items vertically */
+  gap: 20px; /* adds space between them */
+}
+
+#divider{
+  background-color: #D2B48C;
+  color: #221811;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+img {
+ border-style: none;
+ max-width: 100%;
+ height: auto;}
