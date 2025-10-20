@@ -1,13 +1,14 @@
+/* General Body Styles */
 body {
   background-color: #FCEBB6;
   color: #221811;
   font-family: Tahoma, Arial, sans-serif;
-}
-
-body {
-    background-image: url('images/fadedroad50.jpg');
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/fadedroad50.jpg');
   background-repeat: no-repeat;
-  background-size: cover;   /* makes it fill the screen */
+  background-size: cover;   /* fills the screen */
   background-position: center;  /* centers the image */
   background-attachment: fixed; /* keeps it still while scrolling */
 }
@@ -17,17 +18,14 @@ body.menu {
   background-size: cover;
 }
 
-main img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+
+#wrapper {
+  width: 80%;
+  background-color: #FEFAEB;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-body.home, body.menu, body.music {
-  font-family: Tahoma, Arial, sans-serif;
-  color: #221811;
-  line-height: 1.6;
-}
 
 header {
   color: #8C3826;
@@ -44,10 +42,75 @@ h2 {
   color: #8C3826;
 }
 
-nav {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sidebar {
+  flex: 0 0 200px; /* fixed width */
+  background-color: #4B2E2E; /* dark coffee brown */
+  color: #fff;
+  padding: 30px 20px; /* more space around content */
   text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.sidebar .logo {
+  max-width: 120px;
+  margin-bottom: 30px; /* space between logo and nav */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  margin: 0; 
+  padding: 0;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
   font-weight: bold;
+  padding: 10px 0; 
+  transition: color 0.3s;
+}
+
+.sidebar nav a:hover {
+  color: #D2B48C;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.main-content {
+  flex: 1; 
+  padding: 20px;
+}
+
+
+main img {
+  max-width: 100%;
+  height: auto;
   margin-bottom: 20px;
+  border-style: none;
 }
 
 
@@ -60,22 +123,7 @@ footer {
 }
 
 
-#wrapper {
-  width: 80%;
-  background-color: #FEFAEB;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-
-#container {
-  display: flex;
-  justify-content: space-between; /* or center, or flex-start */
-  align-items: center; /* aligns items vertically */
-  gap: 20px; /* adds space between them */
-}
-
-#divider{
+#divider {
   background-color: #D2B48C;
   color: #221811;
   text-align: center;
@@ -84,8 +132,12 @@ footer {
   border-radius: 5px;
   margin: 20px 0;
 }
-
-img {
- border-style: none;
- max-width: 100%;
- height: auto;}
+.menu-image {
+  width: 100%;           /* spans full width of container */
+  height: 200px;         /* fixed height you want */
+  object-fit: cover;     /* crops the image to fit container without distortion */
+  object-position: center; /* centers the image */
+  border-radius: 8px;    /* optional: rounded corners */
+  display: block;        /* removes small inline spacing below image */
+  margin-bottom: 20px;   /* spacing under image */
+}

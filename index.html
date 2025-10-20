@@ -17,38 +17,44 @@
     <h1>JavaJam Coffee Bar</h1>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>&nbsp;&nbsp;
-    <a href="menu.html">Menu</a>&nbsp;&nbsp;
-    <a href="music.html">Music</a>&nbsp;&nbsp;
-    <a href="jobs.html">Jobs</a>
-  </nav>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="images/coffeelogo.jpg" alt="JavaJam Logo" class="logo">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="music.html">Music</a>
+        <a href="jobs.html">Jobs</a>
+      </nav>
+    </aside>
 
-  <main>
-    <img src="images/hero.jpg" alt="Winding road leading through a forest" style="width:100%; height:auto;">
-    
-    <h2>Relax at JavaJam</h2>
-    <p>JavaJam is a cozy spot to grab a coffee, snack, or light meal while enjoying a laid-back atmosphere.</p>
-    <ul>
-      <li>Specialty Coffee and Organic Tea</li>
-      <li>Bagels, Muffins, and Gluten-free Pastries</li>
-      <li>Organic Salads</li>
-      <li>Music and Poetry Readings</li>
-      <li>Open Mic Night</li>
-    </ul>
 
-    <div>
-      12010 Garrett Bay Road<br>
-      Ellison Bay, WI 54210<br><br>
-      888-555-5555
-    </div>
-  </main>
+    <main class="main-content">
+      <img src="images/hero.jpg" alt="Winding road leading through a forest" style="width:100%; height:auto;">
+      
+      <h2>Relax at JavaJam</h2>
+      <p>JavaJam is a cozy spot to grab a coffee, snack, or light meal while enjoying a laid-back atmosphere.</p>
+      <ul>
+        <li>Specialty Coffee and Organic Tea</li>
+        <li>Bagels, Muffins, and Gluten-free Pastries</li>
+        <li>Organic Salads</li>
+        <li>Music and Poetry Readings</li>
+        <li>Open Mic Night</li>
+      </ul>
+
+      <div>
+        12010 Garrett Bay Road<br>
+        Ellison Bay, WI 54210<br><br>
+        888-555-5555
+      </div>
+    </main>
+  </div>
 
   <footer>
     &copy; <span id="year"></span> JavaJam Coffee Bar<br>
     <a href="mailto:jake.anderson0291@gmail.com">Jacob Anderson</a>
   </footer>
-
+</div>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
