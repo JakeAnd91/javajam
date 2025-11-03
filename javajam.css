@@ -207,6 +207,9 @@ footer {
 	#heroguitar {
 		background-image: url(images/heroguitar.jpg);
 	}
+	#herojobs{
+		background-image: url(images/herojobs.jpg);
+	}
 
 	#flow {
 		display: flex;
@@ -268,4 +271,42 @@ footer {
 			background-image: url(images/coffeelogo.jpg);
 		}
 	}
+}
+#flow {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-family: Arial, sans-serif;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ccc;
+  vertical-align: top;
+}
+
+h3.cell {
+  width: 25%;
+  font-size: 1.1rem;
+  color: #4b2e05;
+  font-weight: bold;
+}
+
+p.cell {
+  width: 75%;
+  color: #333;
+  line-height: 1.5;
+}
+
+#flow .row:last-child .cell {
+  border-bottom: none;
+}
+form {
+  padding-left: 20px
 }
