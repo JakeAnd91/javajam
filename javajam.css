@@ -1,143 +1,271 @@
-/* General Body Styles */
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+/* Configure Small Layout */
 body {
-  background-color: #FCEBB6;
-  color: #221811;
-  font-family: Tahoma, Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-image: url('images/fadedroad50.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;   /* fills the screen */
-  background-position: center;  /* centers the image */
-  background-attachment: fixed; /* keeps it still while scrolling */
+	background-color: #D2B48C;
+	color: #221811;
+	font-family: Tahoma, Arial, sans-serif;
+	margin: 0;
 }
-
-body.menu {
-  background: url('images/winding-road.jpg') no-repeat center top;
-  background-size: cover;
-}
-
 
 #wrapper {
-  width: 80%;
-  background-color: #FEFAEB;
-  margin: 0 auto;
-  padding: 10px;
+	background-color: #231814;
+	padding: 0;
 }
 
-
 header {
-  color: #8C3826;
-  background-color: #D2B48C;
-  text-align: center;
-  padding: 10px 0;
+	background-color: #D2B48C;
+	background-image: url(images/cup.jpg);
+	background-repeat: no-repeat;
+	color: #231814;
+	height: 128px;
+	padding-left: 105px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header a:link {
+	color: #231814;
+}
+
+header a:visited {
+	color: #231814;
+}
+
+header a:hover {
+	color: #FEF6C2;
 }
 
 h1 {
-  line-height: 200%;
+	font-size: 2em;
+	font-family: 'Bayon', sans-serif;
 }
 
 h2 {
-  color: #8C3826;
+	color: #8C3826;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+h3,
+dt {
+	color: #8C3826;
 }
 
-.sidebar {
-  flex: 0 0 200px; /* fixed width */
-  background-color: #4B2E2E; /* dark coffee brown */
-  color: #fff;
-  padding: 30px 20px; /* more space around content */
-  text-align: center;
-  border-radius: 8px;
-  box-sizing: border-box;
+h4 {
+	background-color: #D2B48C;
+	font-size: 1.2em;
+	padding-left: .5em;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #221811;
+	clear: left;
 }
 
-/* Logo */
-.sidebar .logo {
-  max-width: 120px;
-  margin-bottom: 30px; /* space between logo and nav */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+nav {
+	text-align: center;
+	font-size: 1.5em;
 }
 
-
-.sidebar nav {
-  display: flex;
-  flex-direction: column; 
-  gap: 20px; 
-  margin: 0; 
-  padding: 0;
+nav a {
+	text-decoration: none;
 }
 
-.sidebar nav a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 0; 
-  transition: color 0.3s;
+nav a:link {
+	color: #FEF6C2;
 }
 
-.sidebar nav a:hover {
-  color: #D2B48C;
+nav a:visited {
+	color: #D2B48C;
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-  
-  .sidebar {
-    width: 100%;
-    padding: 20px;
-  }
+nav a:hover {
+	color: #CC9933;
 }
 
-.main-content {
-  flex: 1; 
-  padding: 20px;
+nav ul {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.25em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-
-main img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  border-style: none;
+nav li {
+	border-bottom: 1px solid #FEF6C2;
+	padding: .5em 1em;
+	width: 100%;
 }
 
+main {
+	background-color: #FEF6C2;
+	display: block;
+	padding: 0 0 2em 0;
+}
+
+h2,
+h3,
+h4,
+p,
+div,
+ul,
+dl {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+main ul {
+	padding-left: 2em;
+}
+
+.details {
+	padding-left: 20%;
+	padding-right: 20%;
+	overflow: auto;
+}
+
+img {
+	border-style: none;
+	max-width: 100%;
+	height: auto;
+}
+
+#homehero {
+	height: 300px;
+	background-image: url(images/road.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#heromugs {
+	height: 300px;
+	background-image: url(images/threemugs.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#heroguitar {
+	height: 300px;
+	background-image: url(images/guitar.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#mobile {
+	display: inline;
+}
+
+#desktop {
+	display: none;
+}
 
 footer {
-  background-color: #D2B48C;
-  font-size: 0.60em;
-  font-style: italic;
-  text-align: center;
-  padding: 5px 0;
+	background-color: #D2B48C;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 1em;
+	border-top: 2px solid #8C3826;
 }
 
+/* Configure Medium Layout */
+@media (min-width: 600px) {
+	header {
+		padding-left: 0;
+		text-align: center;
+	}
 
-#divider {
-  background-color: #D2B48C;
-  color: #221811;
-  text-align: center;
-  padding: 8px 0;
-  font-weight: bold;
-  border-radius: 5px;
-  margin: 20px 0;
+	h1 {
+		font-size: 3em;
+	}
+
+	nav ul {
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+
+	nav li {
+		border-bottom: none;
+	}
+
+	#homehero {
+		background-image: url(images/hero.jpg);
+		height: 50vh;
+	}
+
+	#heromugs {
+		background-image: url(images/heromugs.jpg);
+	}
+
+	#heroguitar {
+		background-image: url(images/heroguitar.jpg);
+	}
+
+	#flow {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#mobile {
+		display: none;
+	}
+
+	#desktop {
+		display: inline;
+	}
+
+	.details {
+		display: flex;
+		flex-direction: row;
+	}
+
+	h4 {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }
-.menu-image {
-  width: 100%;           /* spans full width of container */
-  height: 200px;         /* fixed height you want */
-  object-fit: cover;     /* crops the image to fit container without distortion */
-  object-position: center; /* centers the image */
-  border-radius: 8px;    /* optional: rounded corners */
-  display: block;        /* removes small inline spacing below image */
-  margin-bottom: 20px;   /* spacing under image */
+
+/* Configure Large Layout */
+@media (min-width: 1024px) {
+	@supports (display: grid) {
+		header {
+			grid-area: header;
+		}
+
+		nav {
+			grid-area: nav;
+		}
+
+		main {
+			grid-area: main;
+		}
+
+		footer {
+			grid-area: footer;
+		}
+
+		#wrapper {
+			display: grid;
+			grid-template:
+				"header header"
+				"nav    main"
+				"footer footer"
+				/ 200px;
+		}
+
+		nav ul {
+			flex-direction: column;
+		}
+
+		header {
+			background-image: url(images/coffeelogo.jpg);
+		}
+	}
 }
